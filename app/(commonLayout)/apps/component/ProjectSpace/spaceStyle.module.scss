@@ -1,0 +1,92 @@
+.modalGlobal {
+    :global {
+        .ant-modal-content {
+            padding: 0;
+
+            .ant-modal-close {
+                width: 18px;
+                height: 18px;
+                top: 11px;
+                right: 24px;
+            }
+
+            .ant-modal-header {
+                height: 40px;
+                padding: 8px 24px;
+                background-color: #F0F3FA;
+                margin-bottom: 0px;
+            }
+
+            .ant-modal-body {
+                padding: 24px;
+                padding-bottom: 0;
+            }
+
+            .ant-modal-footer {
+                margin-top: 0;
+                padding: 9px 24px;
+                border-top: 1px solid #EDEDED;
+            }
+        }
+    }
+
+}
+
+.hoverCss {
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.6s ease;
+        box-shadow: 0 6px 16px -8px #00000014, 0 9px 28px #0000000d, 0 12px 48px 16px #00000008;
+    }
+}
+
+.overflowText {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important;
+    line-clamp: 3 !important;
+    overflow: hidden !important;
+    word-break: break-word;
+}
+
+// .cardHover:hover {
+//     box-shadow: 0 6px 16px -8px #00000014, 0 9px 28px #0000000d, 0 12px 48px 16px #00000008;
+// }
+
+.selectNoRadius {
+    :global {
+        .ant-select-selector {
+            border-radius: 2px !important;
+        }
+    }
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+
+    @media (max-width: 1800px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (max-width: 1300px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.scrollContainer {
+    &::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}

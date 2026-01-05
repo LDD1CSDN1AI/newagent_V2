@@ -1,0 +1,49 @@
+.guideCard {
+  width: calc(50% - 12px);
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #E6E7EB;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+  }
+}
+
+.cardBackground {
+  width: auto;
+  height: 196px;
+  box-sizing: content-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 24px 24px 0 24px;
+}
+
+
+
+
+// 底部文字区域
+.cardFooter {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1C2748;
+  line-height: 20px;
+}
+
+.cardSubtitle {
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+}

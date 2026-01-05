@@ -1,0 +1,66 @@
+.hotApp {
+    width: 100%;
+    height: 274px;
+    background-color: #ffffff;
+    border: 1px solid #E6E7EB;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hotAppList {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    // WebKit浏览器（Chrome, Safari, Edge）- 隐藏滚动条
+    &::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    // Firefox - 隐藏滚动条
+    scrollbar-width: none !important;
+
+    // IE 和 Edge (旧版)
+    -ms-overflow-style: none !important;
+}
+
+.hotAppItem {
+    width: auto;
+    height: 67px;
+    line-height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #E6E7EB;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    padding: 0 6px;
+}
+
+.hotAppItemTitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hotAppItemCount {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hotAppItemTitleText {
+    color: #666666;
+    font-size: 14px;
+}
+
+.hotAppItemTitleImage {
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

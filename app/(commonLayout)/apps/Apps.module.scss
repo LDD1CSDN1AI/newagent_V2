@@ -1,0 +1,103 @@
+.leftContainer {
+    width: 100%;
+    height: 100%;
+
+    :global {
+        .ant-layout {
+            position: relative;
+
+            &>.ant-layout-sider {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            &>.ant-layout.miantainer {
+                // margin-left: 290px;
+            }
+        }
+
+        .ant-menu-item {
+            // margin: 5px 0;
+        }
+
+        .ant-layout-sider-children {
+            //                      display: flex;
+            //                      flex-direction: column;
+        }
+
+        .ant-menu-item-group {
+            padding: 0 14px;
+            margin-top: 16px;
+        }
+
+        .ant-menu-item-group-title {
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 10px 0;
+        }
+
+        .Apps_tansuo__TEy4k {
+            padding-left: 14px;
+            text-align: left;
+        }
+
+        .h-full {
+            height: 100%;
+        }
+
+        :where(.css-dev-only-do-not-override-11lehqq).ant-menu-light .ant-menu-item-selected,
+        :where(.css-dev-only-do-not-override-11lehqq).ant-menu-light>.ant-menu .ant-menu-item-selected {
+
+            background-color: #e6f4ff
+        }
+    }
+}
+
+// 侧边栏折叠时的样式
+.siderCollapsed {
+    :global {
+        .Apps_tansuo__TEy4k {
+            padding-left: 0px !important;
+            text-align: center !important;
+        }
+
+        .ant-menu-item {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            justify-content: center !important;
+            margin-left: 15px !important;
+            margin-right: 15px !important;
+            box-sizing: border-box !important;
+            width: 40px !important;
+        }
+
+        // 折叠时隐藏文字，只显示图标
+        .ant-menu-item,
+        .ant-menu-submenu-title {
+            .ant-menu-title-content {
+                display: none !important;
+            }
+        }
+
+        // 确保图标居中
+        .ant-menu-item-icon,
+        .ant-menu-submenu-title .anticon {
+            margin-right: 0 !important;
+        }
+    }
+}
+
+.primary {
+    padding: 14px;
+}
+
+.tansuo {
+    line-height: 22px;
+    font-size: 14px;
+    color: #999999;
+    padding-left: 14px;
+    margin-top: 5px;
+
+}
+
+// :where(.css-dev-only-do-not-override-11lehqq).ant-menu-inline .ant-menu-item, :where(.css-dev-only-do-not-override-11lehqq).ant-menu-vertical .ant-menu-item, :where(.css-dev-only-do-not-override-11lehqq).ant-menu-inline .ant-menu-submenu-title, :where(.css-dev-only-do-not-override-11lehqq).ant-menu-vertical .ant-menu-submenu-title

@@ -1,0 +1,66 @@
+.publishManage {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}
+
+.tabButton {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transition: border-bottom-color 0.3s ease;
+
+    &:hover {
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom-color: #1677ff !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    &:active,
+    &:focus {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+
+    @media (max-width: 1800px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (max-width: 1300px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.scrollContainer {
+
+    // WebKit浏览器（Chrome, Safari, Edge）- 隐藏滚动条
+    &::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    // Firefox - 隐藏滚动条
+    scrollbar-width: none !important;
+
+    // IE 和 Edge (旧版)
+    -ms-overflow-style: none !important;
+}
